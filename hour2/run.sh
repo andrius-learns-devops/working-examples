@@ -35,3 +35,15 @@ touch file\ with\ space\ using\ escaping\ with\ backslash
 ls -l
 
 echo "...three ways to workaround it. touch command created/updated modification timestamp of a file for me"
+
+
+echo "..."
+
+echo "Fouth, hidden files and folders are the ones, starting with '.'"
+
+touch .hidden
+echo "By default '.hidden' file will not be listed:"
+ls
+
+echo "With -a command it will:"
+ls -a
