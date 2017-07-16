@@ -47,3 +47,25 @@ ls
 
 echo "With -a command it will:"
 ls -a
+
+
+
+echo "..."
+
+echo "Manuals 'man ls'"
+
+echo "Search in manuals:"
+
+man -k permissions
+
+
+
+echo "..."
+
+echo "6, shorthand notation of options can be combined. Longer options do the same, should be written separately:"
+
+ls -l --all --human-readable
+
+echo "Same result:"
+
+ls -alh
