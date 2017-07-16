@@ -69,3 +69,29 @@ ls -l --all --human-readable
 echo "Same result:"
 
 ls -alh
+
+
+echo "..."
+
+echo "7 mkdir command and its useful option -p to create parent dirs:"
+
+mkdir -p a/b/c
+touch a/b/c/.gitkeep
+
+echo "..."
+
+echo "8 several other common file modification commands"
+
+touch file1
+cp file1 file2
+mv file2 file3
+
+ls -l
+
+mv file3 file2
+
+ls -l
+
+rm file1
+rm file2
+ls -l
