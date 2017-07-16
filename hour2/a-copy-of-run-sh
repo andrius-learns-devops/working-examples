@@ -24,3 +24,14 @@ echo "If we make a copy of run.sh to some file without extenstion, linux will kn
 
 cp run.sh a-copy-of-run-sh
 file a-copy-of-run-sh
+
+
+echo "..."
+
+echo "Third, for spaces in paths (files or folders)..."
+touch "file with space using double quotes"
+touch 'file with space using single quotes'
+touch file\ with\ space\ using\ escaping\ with\ backslash
+ls -l
+
+echo "...three ways to workaround it. touch command created/updated modification timestamp of a file for me"
